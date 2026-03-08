@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Happy Women's Day</title>
 
 <style>
@@ -10,33 +11,50 @@ body{
   font-family:Arial;
 }
 
-h1{
-  color:#d63384;
+/* photo container */
+.container{
+  position:relative;
+  display:inline-block;
 }
 
-img{
-  width: 100%;
-  height: auto;
-  border-radius: 15px;
+/* photo */
+.container img{
+  width:300px;
+  height:300px;
+  border-radius:20px;
 }
 
-.message{
+/* text on photo */
+.text{
+  position:absolute;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  color:white;
   font-size:22px;
-  color:#333;
-  margin-top:20px;
+  font-weight:bold;
+  background:rgba(0,0,0,0.4);
+  padding:8px 15px;
+  border-radius:10px;
 }
 </style>
 </head>
 
 <body>
 
-<h1>Happy Women's Day 🌸
-“Strong, kind, beautiful 
-Ivlo qualities irukkura en friend-ku<br> 
-Happy Women's Day!”🌟🤍<br>
-“Life-la enaku kidaicha best gift<br>
- En friend nee dhaan🌏🎀
-</h1>
+<h1>Happy Women's Day 🌸</h1>
+
+<div class="container">
+  <img id="slide" src="photo1.jpg">
+  <div class="text">
+    You are my best friend ❤️<br>
+    “Strong, kind, beautiful <br>
+    Ivlo qualities irukkura en friend-ku<br>
+    Happy Women’s Day!”🌟🤍<br>
+    “Life-la enaku kidaicha best gift<br>
+    En friend nee dhaan🌏🎀
+  </div>
+</div>
 
 <audio id="bgSong" loop>
   <source src="song.mp3" type="audio/mp3">
@@ -53,14 +71,9 @@ function playSong(){
 <audio autoplay loop>
 <source src="song.mp3" type="audio/mp3">
 </audio>
-  
+
 <script>
-function playSong(){
-  document.getElementById("bgSong").play();
-}
-</script>
-<script>
-let images = ["photo1.jpeg","photo2.jpeg","photo3.jpeg","photo4.jpeg","photo5.jpeg","photo6.jpeg","photo7.jpeg","photo8.jpeg","photo9.jpeg","photo10.jpeg"];
+let images = ["photo1.jpeg","photo2.jpeg","photo3.jpg","photo4.jpeg","photo5.jpeg","photo6.jpeg","photo7.jpeg","photo8.jpeg","photo9.jpeg","photo10.jpeg"];
 let i = 0;
 
 setInterval(function(){
@@ -73,10 +86,4 @@ setInterval(function(){
 </script>
 
 </body>
-
 </html>
-
-
-
-
-
