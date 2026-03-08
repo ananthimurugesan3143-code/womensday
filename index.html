@@ -45,7 +45,18 @@ Happy Women's Day!”🌟🤍<br>
 <audio autoplay loop>
 <source src="song.mp3" type="audio/mp3">
 </audio>
+  
+<audio id="bgSong" loop>
+  <source src="song.mp3" type="audio/mp3">
+</audio>
 
+<button onclick="playSong()">Play Song 🎵</button>
+
+<script>
+function playSong(){
+  document.getElementById("bgSong").play();
+}
+</script>
 <script>
 let images = ["photo1.jpeg","photo2.jpeg","photo3.jpeg","photo4.jpeg","photo5.jpeg","photo6.jpeg","photo7.jpeg","photo8.jpeg","photo9.jpeg","photo10.jpeg"];
 let i = 0;
@@ -62,4 +73,5 @@ setInterval(function(){
 </body>
 
 </html>
+
 
