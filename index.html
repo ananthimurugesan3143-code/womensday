@@ -42,16 +42,22 @@ Happy Women's Day!”🌟🤍<br>
  En friend nee dhaan🌏🎀
 </div>
 
-<audio autoplay loop>
-<source src="song.mp3" type="audio/mp3">
-</audio>
-  
 <audio id="bgSong" loop>
   <source src="song.mp3" type="audio/mp3">
 </audio>
 
 <button onclick="playSong()">Play Song 🎵</button>
 
+<script>
+function playSong(){
+  document.getElementById("bgSong").play();
+}
+</script>
+
+<audio autoplay loop>
+<source src="song.mp3" type="audio/mp3">
+</audio>
+  
 <script>
 function playSong(){
   document.getElementById("bgSong").play();
@@ -73,5 +79,6 @@ setInterval(function(){
 </body>
 
 </html>
+
 
 
