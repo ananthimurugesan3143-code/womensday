@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Women's Day</title>
+
+<style>
+body{
+  background:#ffdde1;
+  text-align:center;
+  font-family:Arial;
+}
+
+h1{
+  color:#d63384;
+}
+
+img{
+  width:300px;
+  height:300px;
+  border-radius:20px;
+  margin-top:20px;
+}
+
+.message{
+  font-size:22px;
+  color:#333;
+  margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Happy Women's Day 🌸</h1>
+
+<img id="slide" src="photo1.jpeg">
+
+<div class="message">
+“Strong, kind, beautiful 
+Ivlo qualities irukkura en friend-ku<br> 
+Happy Women's Day!”🌟🤍<br>
+“Life-la enaku kidaicha best gift<br>
+ En friend nee dhaan🌏🎀
+</div>
+
+<audio autoplay loop>
+<source src="song.mp3" type="audio/mp3">
+</audio>
+
+<script>
+let images = ["photo1.jpeg","photo2.jpeg","photo3.jpeg","photo4.jpeg","photo5.jpeg","photo6.jpeg","photo7.jpeg","photo8.jpeg","photo9.jpeg","photo10.jpeg"];
+let i = 0;
+
+setInterval(function(){
+ i++;
+ if(i >= images.length){
+   i = 0;
+ }
+ document.getElementById("slide").src = images[i];
+},2000);
+</script>
+
+</body>
+</html>
